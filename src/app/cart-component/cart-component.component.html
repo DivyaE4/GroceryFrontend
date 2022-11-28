@@ -1,1 +1,17 @@
-<p>cart-component works!</p>
+<h1>Cart</h1>
+<style>
+  h1 {
+    text-align: center;
+    color: green;
+  }
+  div {
+    text-align: center;
+  }
+</style>
+{{ cartItems }}
+
+<br />
+<button (click)="clearCart()">Clear Cart</button>
+<br />
+<button (click)="Payment()">Proceed to Pay</button>
+<p>{{ message }}</p>

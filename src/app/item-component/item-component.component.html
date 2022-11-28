@@ -1,14 +1,9 @@
-<html>
-  <head>
-    <title>Text alignment</title>
-    <style>
-      h1 {
-        text-align: center;
-        color: green;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>EASY GROCERY</h1>
-  </body>
-</html>
+<div class="fruit">
+  <img [src]="url" [alt]="Item" style="width: 40%" />
+  <br />
+  {{ Item }}
+  <br />
+  {{ Price }}
+  <br />
+  <button (click)="add()">Add to cart</button>
+</div>
